@@ -1,5 +1,5 @@
 package main;
 
-public class CsigaVersenyJatek {
+public class CsigaVersenyJatek extends Jatek{
     
 }

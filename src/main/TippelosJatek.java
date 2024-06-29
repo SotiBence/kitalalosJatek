@@ -2,7 +2,7 @@ package main;
 
 import java.util.Random;
 
-public class TippelosJatek {
+public class TippelosJatek extends Jatek{
 
     /* ADATTAGOK */
     private static Random rnd = new Random();
