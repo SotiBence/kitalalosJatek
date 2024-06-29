@@ -5,14 +5,22 @@ import java.util.Random;
 public class Jatek {
 
     static Random rnd = new Random();
+    Jatekos jatekos1, jatekos2, jatekos3;
+    
     
     void start() {
         System.out.println("Gondoltam egy számra, 0..9 között...");
         int szam = rnd.nextInt(10);//0..9
         
-        Jatekos jatekos1 = new Jatekos();
-        Jatekos jatekos2 = new Jatekos();
-        Jatekos jatekos3 = new Jatekos();
+        /* a játékos példányok csak itt érhetőek el, a start-on kívül már nem: */
+//        Jatekos jatekos1 = new Jatekos();
+//        Jatekos jatekos2 = new Jatekos();
+//        Jatekos jatekos3 = new Jatekos();
+
+        /* így már a filedeket minden metódus eléri: */
+        jatekos1 = new Jatekos();
+        jatekos2 = new Jatekos();
+        jatekos3 = new Jatekos();
         
         boolean vanTalalat;
         boolean talalt1, talalt2, talalt3;
