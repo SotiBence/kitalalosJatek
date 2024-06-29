@@ -23,18 +23,30 @@ public class JatekIndito {
         //Jatek.start();
         
         /* Meglévő osztály típusok használata: */
-//        TippelosJatek tippelos = new TippelosJatek();
+        TippelosJatek tippelos = new TippelosJatek();
 //        tippelos.start();
 //        
-//        CsigaVersenyJatek csigas = new CsigaVersenyJatek();
+        CsigaVersenyJatek csigas = new CsigaVersenyJatek();
 //        csigas.indito();
         
         /* Öröklődés és polimorfizmus bemutatása: */
-        Jatek jatek = null;
-        jatek = new TippelosJatek();
-        ((TippelosJatek)jatek).start();
+        //Jatek jatek = null;
+        //jatek = new TippelosJatek();
+        //((TippelosJatek)jatek).start();
         
-        jatek = new CsigaVersenyJatek();
-        ((CsigaVersenyJatek)jatek).indito();
+        //jatek = new CsigaVersenyJatek();
+        //((CsigaVersenyJatek)jatek).indito();
+        
+        Jatek[] jatekok = {tippelos, csigas};
+        for (Jatek jatek : jatekok) {
+            if(jatek instanceof TippelosJatek){
+                TippelosJatek tj = (TippelosJatek)jatek;
+                tj.start();
+                //egysorban:
+                //((TippelosJatek)jatek).start();
+            }else if(jatek instanceof CsigaVersenyJatek){
+                ((CsigaVersenyJatek)jatek).indito();
+            }
+        }
     }
 }
