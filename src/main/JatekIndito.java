@@ -10,7 +10,7 @@ public class JatekIndito {
         nem érhető el az az objektum, de 
         létezik a memóriában:
         */
-        new Jatek().start();
+        new TippelosJatek().start();
         
         /* példányosítás után adtunk referenciát az objektumra, 
         majd az objektum metódusát meghívjuk: */

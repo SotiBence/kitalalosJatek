@@ -11,7 +11,7 @@ public class Jatekos {
     /* TAGFÜGGVÉNYEK */
     //beállító:
     public void tippel(){
-        tipp = rnd.nextInt(Jatek.MAX_TIPP);
+        tipp = rnd.nextInt(TippelosJatek.MAX_TIPP);
         System.out.println("tippelésem: " + tipp);
     }
     

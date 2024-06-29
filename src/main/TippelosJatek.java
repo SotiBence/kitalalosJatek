@@ -2,7 +2,7 @@ package main;
 
 import java.util.Random;
 
-public class Jatek {
+public class TippelosJatek {
 
     /* ADATTAGOK */
     private static Random rnd = new Random();
@@ -12,8 +12,8 @@ public class Jatek {
     
     /* TAGFÜGGVÉNYEK */
     public void start() {
-        System.out.printf("Gondoltam egy számra, 0..%d között...%n", Jatek.MAX_TIPP-1);
-        int szam = Jatek.rnd.nextInt(Jatek.MAX_TIPP);
+        System.out.printf("Gondoltam egy számra, 0..%d között...%n", TippelosJatek.MAX_TIPP-1);
+        int szam = TippelosJatek.rnd.nextInt(TippelosJatek.MAX_TIPP);
         
         /* a játékos példányok csak itt érhetőek el, a start-on kívül már nem: */
 //        Jatekos jatekos1 = new Jatekos();
