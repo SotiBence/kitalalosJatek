@@ -4,12 +4,12 @@ import java.util.Random;
 
 public class Jatekos {
     /* ADATTAGOK */
-    static Random rnd = new Random();
+    private static Random rnd = new Random();
     
-    int tipp;
+    private int tipp;
     
     /* TAGFÜGGVÉNYEK */
-    void tippel(){
+    public void tippel(){
         tipp = rnd.nextInt(Jatek.MAX_TIPP);
         System.out.println("tippelésem: " + tipp);
     }

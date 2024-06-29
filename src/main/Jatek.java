@@ -5,13 +5,13 @@ import java.util.Random;
 public class Jatek {
 
     /* ADATTAGOK */
-    static Random rnd = new Random();
-    static final int MAX_TIPP = 10;
+    private static Random rnd = new Random();
+    private static final int MAX_TIPP = 10;
     
-    Jatekos jatekos1, jatekos2, jatekos3;
+    private Jatekos jatekos1, jatekos2, jatekos3;
     
     /* TAGFÜGGVÉNYEK */
-    void start() {
+    public void start() {
         System.out.printf("Gondoltam egy számra, 0..%d között...%n", Jatek.MAX_TIPP-1);
         int szam = Jatek.rnd.nextInt(Jatek.MAX_TIPP);
         
