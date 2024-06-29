@@ -4,13 +4,16 @@ import java.util.Random;
 
 public class Jatek {
 
+    /* ADATTAGOK */
     static Random rnd = new Random();
+    static final int MAX_TIPP = 10;
+    
     Jatekos jatekos1, jatekos2, jatekos3;
     
-    
+    /* TAGFÜGGVÉNYEK */
     void start() {
-        System.out.println("Gondoltam egy számra, 0..9 között...");
-        int szam = rnd.nextInt(10);//0..9
+        System.out.printf("Gondoltam egy számra, 0..%d között...%n", Jatek.MAX_TIPP-1);
+        int szam = Jatek.rnd.nextInt(Jatek.MAX_TIPP);
         
         /* a játékos példányok csak itt érhetőek el, a start-on kívül már nem: */
 //        Jatekos jatekos1 = new Jatekos();
