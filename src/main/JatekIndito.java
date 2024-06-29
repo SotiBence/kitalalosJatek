@@ -39,16 +39,20 @@ public class JatekIndito {
         
         Jatek[] jatekok = {tippelos, csigas, new Jatek()};
         for (Jatek jatek : jatekok) {
-            if(jatek instanceof TippelosJatek){
-                TippelosJatek tj = (TippelosJatek)jatek;
-                tj.start();
-                //egysorban:
-                //((TippelosJatek)jatek).start();
-            }else if(jatek instanceof CsigaVersenyJatek){
-                ((CsigaVersenyJatek)jatek).indito();
-            }else{
-                jatek.kezdes();
-            }
+            /* HIBÁS tervezés, ha NINCs közös metódus az ősben: */
+//            if(jatek instanceof TippelosJatek){
+//                TippelosJatek tj = (TippelosJatek)jatek;
+//                tj.start();
+//                //egysorban:
+//                //((TippelosJatek)jatek).start();
+//            }else if(jatek instanceof CsigaVersenyJatek){
+//                ((CsigaVersenyJatek)jatek).indito();
+//            }else{
+//                jatek.kezdes();
+//            }
+
+            /* HELYES tervezés, van közös metódus az ősben: */
+            jatek.start();
         }
     }
 }

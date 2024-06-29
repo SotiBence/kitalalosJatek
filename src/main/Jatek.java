@@ -1,7 +1,7 @@
 package main;
 
 public class Jatek {
-    public void kezdes(){
+    public void start(){
         System.out.println("Egy játék elindult...");
     }
 }

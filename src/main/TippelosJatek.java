@@ -11,6 +11,7 @@ public class TippelosJatek extends Jatek{
     private Jatekos jatekos1, jatekos2, jatekos3;
     
     /* TAGFÜGGVÉNYEK */
+    @Override
     public void start() {
         System.out.printf("Gondoltam egy számra, 0..%d között...%n", TippelosJatek.MAX_TIPP-1);
         int szam = TippelosJatek.rnd.nextInt(TippelosJatek.MAX_TIPP);
