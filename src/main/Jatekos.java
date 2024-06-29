@@ -9,8 +9,14 @@ public class Jatekos {
     private int tipp;
     
     /* TAGFÜGGVÉNYEK */
+    //beállító:
     public void tippel(){
         tipp = rnd.nextInt(Jatek.MAX_TIPP);
         System.out.println("tippelésem: " + tipp);
+    }
+    
+    //lekérdező:
+    public int lekerdezTipp(){
+        return tipp;
     }
 }

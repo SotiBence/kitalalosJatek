@@ -40,14 +40,17 @@ public class Jatek {
             /* ez NEM OOP megközelíatés: */
             //int tipp1 = jatekos1.tippel();
 
-            /* OOP szemlélettel: */
+            /* OOP szemlélettel, adatrejtés neélkül: */
             jatekos1.tippel();
-            int tipp1 = jatekos1.tipp;
+            //int tipp1 = jatekos1.tipp;
+            
+            /* OOP szemlélettel, adatrejtéssel: */
+            int tipp1 = jatekos1.lekerdezTipp();
 
             jatekos2.tippel();
-            int tipp2 = jatekos2.tipp;
+            int tipp2 = jatekos2.lekerdezTipp();
             jatekos3.tippel();
-            int tipp3 = jatekos3.tipp;
+            int tipp3 = jatekos3.lekerdezTipp();
 
             /* +1 tippet kérek az adott játékostól: */
             //int tipp1 = jatekos1.tippel();
