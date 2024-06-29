@@ -37,7 +37,7 @@ public class JatekIndito {
         //jatek = new CsigaVersenyJatek();
         //((CsigaVersenyJatek)jatek).indito();
         
-        Jatek[] jatekok = {tippelos, csigas};
+        Jatek[] jatekok = {tippelos, csigas, new Jatek()};
         for (Jatek jatek : jatekok) {
             if(jatek instanceof TippelosJatek){
                 TippelosJatek tj = (TippelosJatek)jatek;
@@ -46,6 +46,8 @@ public class JatekIndito {
                 //((TippelosJatek)jatek).start();
             }else if(jatek instanceof CsigaVersenyJatek){
                 ((CsigaVersenyJatek)jatek).indito();
+            }else{
+                jatek.kezdes();
             }
         }
     }
