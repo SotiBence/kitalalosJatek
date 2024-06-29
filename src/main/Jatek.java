@@ -6,7 +6,7 @@ public class Jatek {
 
     /* ADATTAGOK */
     private static Random rnd = new Random();
-    private static final int MAX_TIPP = 10;
+    public static final int MAX_TIPP = 10;
     
     private Jatekos jatekos1, jatekos2, jatekos3;
     
