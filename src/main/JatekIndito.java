@@ -37,7 +37,8 @@ public class JatekIndito {
         //jatek = new CsigaVersenyJatek();
         //((CsigaVersenyJatek)jatek).indito();
         
-        Jatek[] jatekok = {tippelos, csigas, new Jatek()};
+        //Jatek[] jatekok = {tippelos, csigas, new Jatek()};
+        Jatek[] jatekok = {csigas};
         for (Jatek jatek : jatekok) {
             /* HIBÁS tervezés, ha NINCs közös metódus az ősben: */
 //            if(jatek instanceof TippelosJatek){
